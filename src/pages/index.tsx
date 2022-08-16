@@ -13,8 +13,8 @@ const portfolioList = [
     role: 'MUSIC, SOUND DESIGN & MIX',
   },
   {
-    title: 'Expedia / EUFA',
-    subTitle: 'THE GOALS OF DANI ALVES',
+    title: 'Expedia / UEFA',
+    subTitle: 'GOALS OF DANI ALVES',
     vimeoID: '716364767',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
@@ -113,11 +113,14 @@ const portfolioList = [
 ];
 const Index = () => {
   const [triggered, setTriggered] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
+
   const [shouldShow, setShouldShow] = useState(true);
 
   const onScroll = useCallback(() => {
     const { scrollY, innerWidth } = window;
     // get width and height of each slide
+    setWindowWidth(innerWidth);
     const innerHeightOfItem = innerWidth / 1.7;
     const fullBodyLength = innerHeightOfItem * (portfolioList.length - 2);
     const scrolledSoMany = Math.ceil(scrollY / innerHeightOfItem);
@@ -126,6 +129,9 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
+    const { innerWidth } = window;
+    setWindowWidth(innerWidth);
+
     // add eventlistener to window
     window.addEventListener('scroll', onScroll, { passive: true });
     // remove event on unmount to prevent a memory leak with the cleanup
@@ -163,13 +169,23 @@ const Index = () => {
       });
       return (
         <div
-          className="aspect-w-16 aspect-h-9 bg-black"
+          className={`${
+            windowWidth > 700
+              ? 'aspect-w-12 aspect-h-4'
+              : 'aspect-w-16 aspect-h-12'
+          } bg-white`}
           ref={ref}
-          style={{ overflow: 'hidden' }}
+          style={{
+            overflow: 'hidden',
+            maxWidth: 900,
+            display: 'block',
+            margin: 'auto',
+            marginBottom: 20,
+          }}
           id={`${i}`}
         >
           <div
-            className={`absolute top-0 bg-yellow-400 font-rubik text-black ${
+            className={`absolute top-0 bg-white font-rubik text-black ${
               inView ? 'animate-fadeInUp' : ''
             } left-0 z-10 p-5 py-0 lg:text-3xl`}
             style={{
@@ -180,32 +196,34 @@ const Index = () => {
               paddingRight: '32%',
             }}
           >
-            <div className="block truncate py-2 text-xl uppercase lg:text-xl">
-              <strong>{v.title}</strong> &nbsp;&nbsp;&nbsp;{' '}
+            <div className="block truncate py-2 text-sm uppercase lg:text-2xl">
+              <strong>{v.title}</strong> &nbsp;{' '}
               <i className="animate-pulse">{v.subTitle}</i>
             </div>
             <div
               style={{
                 position: 'absolute',
-                right: '29%',
+                right: '34%',
                 top: 0,
                 width: '3%',
                 height: '130%',
                 transform: 'rotate(20deg)',
+                background: '#f9f9f9',
               }}
-              className="bg-orange-500"
+              className="bg-white-500"
             ></div>
             <div
               style={{
                 position: 'absolute',
                 right: 0,
                 top: 0,
-                width: '30%',
+                width: '35%',
                 height: '100%',
+                background: '#f9f9f9',
               }}
-              className="bg-orange-500 text-center text-white"
+              className="bg-white-500 text-center text-black"
             >
-              <strong className="block py-2 text-sm lg:truncate lg:text-xl">
+              <strong className="block py-2 text-xs lg:truncate lg:text-lg">
                 {v.role}
               </strong>
             </div>
@@ -230,7 +248,7 @@ const Index = () => {
         />
       }
     >
-      <div className="text-bold z-10 w-full bg-slate-900 p-5 py-3 text-center text-white">
+      {/* <div className="text-bold z-10 w-full bg-slate-900 p-5 py-3 text-center text-white">
         <b className=" font-rubik text-xl ">
           <span className="text-yellow-400">MUSIC AND SOUND DESIGN</span> AS
           AWESOME AS YOUR IDEAS
@@ -239,7 +257,7 @@ const Index = () => {
         <span className="text-sm">
           <b>Don't believe us?</b> Check out our work below ↓
         </span>
-      </div>
+      </div> */}
 
       {mapOutElements()}
       <button

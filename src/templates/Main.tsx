@@ -56,8 +56,8 @@ const Main = (props: IMainProps) => {
           <div className="mr-2 h-12 w-60 fill-current ">
             <Link href="/">
               <img
-                src={`${router.basePath}/assets/images/fulllogo.png`}
-                style={{ cursor: 'pointer' }}
+                src={`${router.basePath}/assets/images/logoicon.png`}
+                style={{ cursor: 'pointer', width: 74 }}
               />
             </Link>
           </div>
@@ -91,7 +91,7 @@ const Main = (props: IMainProps) => {
           <div className="font-rubik text-sm font-bold lg:grow">
             <Link href="/">
               <div
-                className="mt-4 mr-4 block text-lg text-black hover:text-slate-600 lg:mt-0  lg:inline-block"
+                className="mt-4 mr-8 block text-lg text-black hover:text-slate-600 lg:mt-0  lg:inline-block"
                 style={{ cursor: 'pointer' }}
               >
                 OUR WORK
@@ -99,7 +99,7 @@ const Main = (props: IMainProps) => {
             </Link>
             <Link href="/about">
               <div
-                className="mt-4 mr-4 block text-lg text-black hover:text-slate-600  lg:mt-0 lg:inline-block"
+                className="mt-4 mr-8 block text-lg text-black hover:text-slate-600  lg:mt-0 lg:inline-block"
                 style={{ cursor: 'pointer' }}
               >
                 ABOUT US

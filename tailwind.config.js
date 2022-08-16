@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        rubik: ['Rubik Dirt', 'sans-serif'],
+        rubik: ['Roboto Mono', 'sans-serif'],
       },
       keyframes: {
         fadeInUp: {

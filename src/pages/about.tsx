@@ -15,7 +15,7 @@ const About = () => {
         />
       }
     >
-      <div className="text-bold z-10 w-full bg-slate-900 p-5 py-3 text-center text-white">
+      {/* <div className="text-bold z-10 w-full bg-slate-900 p-5 py-3 text-center text-white">
         <b className=" font-rubik text-xl ">
           <span className="text-yellow-400">MUSIC AND SOUND DESIGN</span> AS
           AWESOME AS YOUR IDEAS
@@ -24,21 +24,20 @@ const About = () => {
         <span className="text-sm">
           <b>Want to learn about us?</b> See our mission and advocates below ↓
         </span>
-      </div>
+      </div> */}
 
       <div className="space-around m-auto flex  w-3/4 justify-center">
-        <div className="flex-1 text-center  font-rubik text-5xl font-semibold text-slate-900">
-          <p className="basis-full leading-6">
-            <br />
+        <div className="flex-1 text-center font-rubik text-5xl font-semibold text-slate-900">
+          <p className="basis-full leading-none lg:leading-6">
             <br />
             WE ARE <span className="text-red-500">KILLER CRAB MEN.</span>
             <br />
-            <span className="text-2xl">
+            <p className="text-2xl leading-6 lg:leading-7">
               A PRODUCTION DUO MAKING WAVES (OF SOUND).
-            </span>
+            </p>
           </p>
 
-          <p className="basis-full leading-6">
+          {/* <p className="basis-full leading-6">
             WE WRITE MUSIC.
             <br />
             <span className="text-2xl">
@@ -53,38 +52,45 @@ const About = () => {
               MUSIC FOR <span className="text-red-500">SAYING SOMETHING.</span>
               <br />
             </span>
+          </p> */}
+
+          <p className="mb-0 basis-full leading-10 lg:leading-4">
+            WE CREATE THINGS <span className="text-red-500">DIFFERENTLY.</span>
           </p>
 
           <p className="basis-full leading-7">
-            WE CREATE THINGS <span className="text-red-500">DIFFERENTLY.</span>
-            <br />
             <span className="text-2xl">
               EVERYTHING IS{' '}
               <span className="text-red-500">FRESH OFF THE BOAT.</span>
               <br />
             </span>
+          </p>
+          <p className="basis-full leading-10">
             <span className="text-red-500">NEVER FACTORY MADE,</span>
             <br />
-            <span className="leading-10">
+            <span className="leading-tight">
               <span className="text-2xl">OUR AIM:</span>
               <br />
-              <span className="text-red-500">
-                TO SET YOU APART IN A SEA OF "ISH".
+              <span className="font-bold text-red-500">
+                TO SET YOU APART <br /> IN A SEA OF "ISH".
               </span>
               <br />
             </span>
           </p>
 
-          <p className="basis-full leading-10">
+          <p className="basis-full leading-tight">
             <span className="text-yellow-500">YOUR PROJECT</span>
             <br />
-            NEEDS A <span className="text-red-500">PERFECT</span> SOUNDTRACK.
+            <span className="text-4xl">
+              {' '}
+              NEEDS A <span className="text-red-500">PERFECT</span> SOUNDTRACK.
+            </span>
             <br />
             <span className="text-yellow-500">WE'LL MAKE IT.</span>
             <br />
           </p>
 
-          <p className="basis-full text-4xl leading-8">
+          <p className="basis-full text-4xl leading-tight">
             <span className="text-red-500">JUMP IN THE WATER WITH US.</span>
             <br />
             <span className="text-5xl">
@@ -96,11 +102,6 @@ const About = () => {
 
           <div className="bg-white py-16">
             <div className="container m-auto space-y-8 px-6 md:px-12 lg:px-56">
-              <div className="m-auto text-center lg:w-7/12">
-                <h2 className="text-2xl font-light text-gray-700 md:text-4xl">
-                  Don't take our word for it - check out our clients:
-                </h2>
-              </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
                 <div className="p-4">
                   <img
