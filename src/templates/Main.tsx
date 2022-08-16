@@ -102,7 +102,7 @@ const Main = (props: IMainProps) => {
                 className="mt-4 mr-8 block text-lg text-black hover:text-slate-600  lg:mt-0 lg:inline-block"
                 style={{ cursor: 'pointer' }}
               >
-                ABOUT US
+                ABOUT
               </div>
             </Link>
             <Link href="/contact">
@@ -110,7 +110,7 @@ const Main = (props: IMainProps) => {
                 className="mt-4 block text-lg text-black hover:text-slate-600 lg:mt-0 lg:inline-block  "
                 style={{ cursor: 'pointer' }}
               >
-                CONTACT US
+                CONTACT
               </div>
             </Link>
           </div>
