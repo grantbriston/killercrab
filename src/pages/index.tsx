@@ -198,7 +198,7 @@ const Index = () => {
           >
             <div className="block truncate py-2 text-sm uppercase lg:text-2xl">
               <strong>{v.title}</strong> &nbsp;{' '}
-              <i className="animate-pulse">{v.subTitle}</i>
+              <i className="animate-pulse hidden lg:inline">{v.subTitle}</i>
             </div>
             <div
               style={{
