@@ -194,80 +194,82 @@ const Index = () => {
   };
 
   const mapOutElements = () => {
-    return portfolioList.sort((a, b) => (a.order > b.order) ? -1 : 1).map((v, i) => {
-      const { ref, inView } = useInView({
-        threshold: 0,
-      });
-      return (
-        <div
-          className={`${
-            windowWidth > 700
-              ? 'aspect-w-12 aspect-h-4'
-              : 'aspect-w-16 aspect-h-12'
-          } bg-white`}
-          ref={ref}
-          style={{
-            overflow: 'hidden',
-            maxWidth: 900,
-            display: 'block',
-            margin: 'auto',
-            marginBottom: 20,
-          }}
-          id={`${i}`}
-        >
+    return portfolioList
+      .sort((a, b) => (a.order > b.order ? -1 : 1))
+      .map((v, i) => {
+        const { ref, inView } = useInView({
+          threshold: 0,
+        });
+        return (
           <div
-            className={`absolute top-0 bg-white font-rubik text-black ${
-              inView ? 'animate-fadeInUp' : ''
-            } left-0 z-10 p-5 py-0 lg:text-3xl`}
+            className={`${
+              windowWidth > 700
+                ? 'aspect-w-12 aspect-h-4'
+                : 'aspect-w-16 aspect-h-12'
+            } bg-white`}
+            ref={ref}
             style={{
-              bottom: 'auto !important',
-              transform: 'translateY(-200px)',
-              height: 50,
               overflow: 'hidden',
-              paddingRight: '32%',
+              maxWidth: 900,
+              display: 'block',
+              margin: 'auto',
+              marginBottom: 20,
             }}
+            id={`${i}`}
           >
-            <div className="block truncate py-2 text-sm uppercase lg:text-2xl">
-              <strong>{v.title}</strong> &nbsp;{' '}
-              <i className="animate-pulse hidden lg:inline">{v.subTitle}</i>
-            </div>
             <div
+              className={`absolute top-0 bg-white font-rubik text-black ${
+                inView ? 'animate-fadeInUp' : ''
+              } left-0 z-10 p-5 py-0 lg:text-3xl`}
               style={{
-                position: 'absolute',
-                right: '34%',
-                top: 0,
-                width: '3%',
-                height: '130%',
-                transform: 'rotate(20deg)',
-                background: '#f9f9f9',
+                bottom: 'auto !important',
+                transform: 'translateY(-200px)',
+                height: 50,
+                overflow: 'hidden',
+                paddingRight: '32%',
               }}
-              className="bg-white-500"
-            ></div>
-            <div
-              style={{
-                position: 'absolute',
-                right: 0,
-                top: 0,
-                width: '35%',
-                height: '100%',
-                background: '#f9f9f9',
-              }}
-              className="bg-white-500 text-center text-black"
             >
-              <strong className="block py-2 text-xs lg:truncate lg:text-lg">
-                {v.role}
-              </strong>
+              <div className="block truncate py-2 text-sm uppercase lg:text-2xl">
+                <strong>{v.title}</strong> &nbsp;{' '}
+                <i className="hidden animate-pulse lg:inline">{v.subTitle}</i>
+              </div>
+              <div
+                style={{
+                  position: 'absolute',
+                  right: '34%',
+                  top: 0,
+                  width: '3%',
+                  height: '130%',
+                  transform: 'rotate(20deg)',
+                  background: '#f9f9f9',
+                }}
+                className="bg-white-500"
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  right: 0,
+                  top: 0,
+                  width: '35%',
+                  height: '100%',
+                  background: '#f9f9f9',
+                }}
+                className="bg-white-500 text-center text-black"
+              >
+                <strong className="block py-2 text-xs lg:truncate lg:text-lg">
+                  {v.role}
+                </strong>
+              </div>
             </div>
+            <iframe
+              src={`https://player.vimeo.com/video/${v.vimeoID}?color=0c88dd&title=0&byline=0&portrait=0&badge=0`}
+              width="640"
+              height="360"
+              allow="autoplay; fullscreen; picture-in-picture"
+            ></iframe>
           </div>
-          <iframe
-            src={`https://player.vimeo.com/video/${v.vimeoID}?color=0c88dd&title=0&byline=0&portrait=0&badge=0`}
-            width="640"
-            height="360"
-            allow="autoplay; fullscreen; picture-in-picture"
-          ></iframe>
-        </div>
-      );
-    });
+        );
+      });
   };
 
   return (
