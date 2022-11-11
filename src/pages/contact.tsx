@@ -121,9 +121,9 @@ const Contact = () => {
         </div> */}
         <div className="space-around m-auto  w-3/4 justify-center">
           <div>
-            <p className="font-rubik text-4xl">
+            {/* <p className="font-rubik text-4xl">
               We'd <b className="text-red-500">love</b> to work with you
-            </p>
+            </p> */}
             <p>You can call us:</p>
             <a
               href="tel:+447858972529"
