@@ -12,6 +12,7 @@ const portfolioList = [
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
     order: 0,
+    newOrder: true,
   },
   {
     title: 'ITV',
@@ -20,6 +21,7 @@ const portfolioList = [
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
     order: 2,
+    newOrder: true,
   },
   {
     title: 'Homobloc',
@@ -28,6 +30,7 @@ const portfolioList = [
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
     order: 4,
+    newOrder: true,
   },
   {
     title: 'Fiture',
@@ -36,6 +39,7 @@ const portfolioList = [
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
     order: 8,
+    newOrder: true,
   },
   {
     title: 'SONOS',
@@ -83,7 +87,7 @@ const portfolioList = [
     vimeoID: '605486806',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 0,
+    order: 1,
   },
   {
     title: 'Adidas X End',
@@ -171,7 +175,7 @@ const portfolioList = [
     vimeoID: '638847678',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 1,
+    order: 2,
   },
 ];
 const Index = () => {
@@ -227,7 +231,8 @@ const Index = () => {
 
   const mapOutElements = () => {
     return portfolioList
-      .sort((a, b) => ((a.order > b.order && a.title > b.title) ? 1 : -1))
+      .sort((a, b) => (a.order > b.order ? 1 : -1))
+      .sort((a, b) => (a.order === b.order && a?.newOrder ? 1 : -1))
       .map((v, i) => {
         const { ref, inView } = useInView({
           threshold: 0,
