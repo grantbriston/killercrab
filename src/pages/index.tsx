@@ -231,7 +231,7 @@ const Index = () => {
 
   const mapOutElements = () => {
     return portfolioList
-      .sort((a, b) => (a.order > b.order ? 1 : a.order === b.order ? 0 : -1))
+      .sort((a, b) => (a.order > b.order ? -1 : a.order === b.order ? 0 : 1))
       .map((v, i) => {
         const { ref, inView } = useInView({
           threshold: 0,
