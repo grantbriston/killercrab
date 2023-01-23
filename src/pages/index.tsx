@@ -6,12 +6,46 @@ import { Main } from '@/templates/Main';
 
 const portfolioList = [
   {
+    title: 'Sky Sports',
+    subTitle: 'Erling Needs Games ',
+    vimeoID: '782746206',
+    otherLink: '',
+    role: 'MUSIC, SOUND DESIGN & MIX',
+    order: 6,
+  },
+  {
+    title: 'On Running',
+    subTitle: 'Night Runner',
+    vimeoID: '791311079',
+    otherLink: '',
+    role: 'MUSIC, SOUND DESIGN & MIX',
+    order: 7,
+  },
+  {
+    title: 'EE',
+    subTitle: 'No Fans Land',
+    vimeoID: '774847407',
+    otherLink: '',
+    role: 'MUSIC, SOUND DESIGN & MIX',
+    order: 8,
+  },
+  {
+    title: 'Nike Phantom',
+    subTitle: 'More Moves',
+    vimeoID: '791306981',
+    otherLink: '',
+    role: 'MUSIC, SOUND DESIGN & MIX',
+    order: 13,
+  },
+
+
+  {
     title: 'Man United',
     subTitle: 'The Story Of The Seven',
     vimeoID: '768293826',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 1,
+    order: 5,
   },
   {
     title: 'ITV',
@@ -19,7 +53,7 @@ const portfolioList = [
     vimeoID: '770195363',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 3,
+    order: 8,
   },
   {
     title: 'Homobloc',
@@ -27,7 +61,7 @@ const portfolioList = [
     vimeoID: '768056733',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 4,
+    order: 9,
   },
   {
     title: 'Fiture',
@@ -35,7 +69,7 @@ const portfolioList = [
     vimeoID: '768065375',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 9,
+    order: 14,
   },
   {
     title: 'SONOS',
@@ -43,7 +77,7 @@ const portfolioList = [
     vimeoID: '679725688',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 10,
+    order: 14,
   },
   {
     title: 'Expedia x UEFA',
@@ -51,23 +85,15 @@ const portfolioList = [
     vimeoID: '716364767',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 8,
+    order: 12,
   },
-  // {
-  //   title: 'EBAY',
-  //   subTitle: 'DREAM TRANSFER',
-  //   vimeoID: '696952280',
-  //   otherLink: '',
-  //   role: 'MUSIC, SOUND DESIGN & MIX',
-  //   order: 6,
-  // },
   {
     title: 'Kick It Out',
     subTitle: 'Football Charity',
     vimeoID: '731777269',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 14,
+    order: 18,
   },
   {
     title: 'Nissan',
@@ -75,7 +101,7 @@ const portfolioList = [
     vimeoID: '642690354',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 6,
+    order: 10,
   },
   {
     title: 'Adidas',
@@ -83,7 +109,7 @@ const portfolioList = [
     vimeoID: '605486806',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 2,
+    order: 5,
   },
   {
     title: 'Adidas X End',
@@ -91,7 +117,7 @@ const portfolioList = [
     vimeoID: '612658972',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 12,
+    order: 16,
   },
   {
     title: 'Nike',
@@ -99,7 +125,7 @@ const portfolioList = [
     vimeoID: '643003058',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 16,
+    order: 20,
   },
   {
     title: 'New Balance',
@@ -107,15 +133,15 @@ const portfolioList = [
     vimeoID: '680473098',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 19,
+    order: 23,
   },
   {
     title: 'On Running',
     subTitle: 'Speed Runner',
-    vimeoID: '695277950',
+    vimeoID: '694461292',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 7,
+    order: 11,
   },
   {
     title: 'Expedia x UEFA ',
@@ -123,7 +149,7 @@ const portfolioList = [
     vimeoID: '719879359',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 13,
+    order: 17,
   },
   {
     title: 'Adidas',
@@ -131,7 +157,7 @@ const portfolioList = [
     vimeoID: '690561821',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 15,
+    order: 19,
   },
   // {
   //   title: "ballantine's",
@@ -147,7 +173,7 @@ const portfolioList = [
     vimeoID: '642998840',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 17,
+    order: 21,
   },
   {
     title: 'oi polloi',
@@ -155,7 +181,7 @@ const portfolioList = [
     vimeoID: '671136968',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 18,
+    order: 22,
   },
   {
     title: 'Nike',
@@ -163,7 +189,7 @@ const portfolioList = [
     vimeoID: '489037777',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 11,
+    order: 15,
   },
   {
     title: 'mr bexx',
@@ -171,7 +197,7 @@ const portfolioList = [
     vimeoID: '638847678',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 5,
+    order: 9,
   },
 ];
 const Index = () => {
