@@ -19,7 +19,7 @@ const portfolioList = [
     vimeoID: '791311079',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 7,
+    order: 9,
   },
   {
     title: 'EE',
@@ -27,7 +27,7 @@ const portfolioList = [
     vimeoID: '774847407',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 8,
+    order: 10,
   },
   {
     title: 'Nike Phantom',
@@ -35,7 +35,7 @@ const portfolioList = [
     vimeoID: '791306981',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 13,
+    order: 14,
   },
 
 
