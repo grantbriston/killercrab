@@ -37,8 +37,6 @@ const portfolioList = [
     role: 'MUSIC, SOUND DESIGN & MIX',
     order: 14,
   },
-
-
   {
     title: 'Man United',
     subTitle: 'The Story Of The Seven',
