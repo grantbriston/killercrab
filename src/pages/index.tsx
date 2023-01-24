@@ -11,7 +11,7 @@ const portfolioList = [
     vimeoID: '782746206',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 6,
+    order: 5,
   },
   {
     title: 'On Running',
@@ -19,7 +19,7 @@ const portfolioList = [
     vimeoID: '791311079',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 9,
+    order: 8,
   },
   {
     title: 'EE',
@@ -51,7 +51,7 @@ const portfolioList = [
     vimeoID: '770195363',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 8,
+    order: 6,
   },
   {
     title: 'Homobloc',
@@ -59,7 +59,7 @@ const portfolioList = [
     vimeoID: '768056733',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 9,
+    order: 7,
   },
   {
     title: 'Fiture',
@@ -83,7 +83,7 @@ const portfolioList = [
     vimeoID: '716364767',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 12,
+    order: 13,
   },
   {
     title: 'Kick It Out',
@@ -107,7 +107,7 @@ const portfolioList = [
     vimeoID: '605486806',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 5,
+    order: 3,
   },
   {
     title: 'Adidas X End',
