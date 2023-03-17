@@ -27,7 +27,7 @@ const portfolioList = [
     vimeoID: '774847407',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 10,
+    order: 11,
   },
   {
     title: 'Nike Phantom',
@@ -35,7 +35,7 @@ const portfolioList = [
     vimeoID: '791306981',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 14,
+    order: 15,
   },
   {
     title: 'Man United',
@@ -75,7 +75,7 @@ const portfolioList = [
     vimeoID: '679725688',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 14,
+    order: 18,
   },
   {
     title: 'Expedia x UEFA',
@@ -91,7 +91,7 @@ const portfolioList = [
     vimeoID: '731777269',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 18,
+    order: 23,
   },
   {
     title: 'Nissan',
@@ -131,7 +131,7 @@ const portfolioList = [
     vimeoID: '680473098',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 23,
+    order: 25,
   },
   {
     title: 'On Running',
@@ -139,7 +139,7 @@ const portfolioList = [
     vimeoID: '694461292',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 11,
+    order: 12,
   },
   {
     title: 'Expedia x UEFA ',
@@ -147,7 +147,7 @@ const portfolioList = [
     vimeoID: '719879359',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 17,
+    order: 19,
   },
   {
     title: 'Adidas',
@@ -155,7 +155,7 @@ const portfolioList = [
     vimeoID: '690561821',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 19,
+    order: 24,
   },
   // {
   //   title: "ballantine's",
@@ -187,7 +187,7 @@ const portfolioList = [
     vimeoID: '489037777',
     otherLink: '',
     role: 'MUSIC, SOUND DESIGN & MIX',
-    order: 15,
+    order: 17,
   },
   {
     title: 'mr bexx',
